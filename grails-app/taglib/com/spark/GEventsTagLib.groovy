@@ -38,5 +38,13 @@ class GEventsTagLib {
 
    }
 
-
+def customDatePicker = {attrs, body ->        
+def unstyled = g.datePicker(attrs, body)        
+def sizes = [day: 2, month: 2, year:2]        
+def styled = unstyled.replaceAll('name="\\S+_(day|month|year)"') { match, timeUnit -> 
+println match           
+"${match} class=\"span${sizes[timeUnit]}\""
+  }       
+out << styled    
+}
 }

@@ -104,6 +104,10 @@ class EventController {
    def search = {
       if(params.query){
          def events = Event.search(params.query).results
+         if (!params.pastEvents){
+            def now = new Date() 
+            events = events.findAll{it.startDate >= now}
+            }
          [events : events]
          }
 }

@@ -31,7 +31,7 @@
 		<g:message code="event.startDate.label" default="Start Date" />
 		<span class="required-indicator">*</span>
 	</label>
-	<g:datePicker name="startDate" precision="day"  value="${eventInstance?.startDate}"  />
+	<g:customDatePicker name="startDate" precision="day"  value="${eventInstance?.startDate}" style="width:50px" />
 </div>
 
 <div class="fieldcontain ${hasErrors(bean: eventInstance, field: 'endDate', 'error')} required">
@@ -39,7 +39,7 @@
 		<g:message code="event.endDate.label" default="End Date" />
 		<span class="required-indicator">*</span>
 	</label>
-	<g:datePicker name="endDate" precision="day"  value="${eventInstance?.endDate}"  />
+	<g:customDatePicker name="endDate" precision="day"  value="${eventInstance?.endDate}"  style="width:50px" />
 </div>
 
 <div class="fieldcontain ${hasErrors(bean: eventInstance, field: 'organizer', 'error')} required">
