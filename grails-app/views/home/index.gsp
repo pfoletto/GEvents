@@ -53,6 +53,10 @@
         <p>GEvents.com is a site dedicated to assisting individuals and communities
           to organize technology conferences. To bring great minds with common
           interests and passions together for the good of greater geekdom!
+          
+        </p>
+        <p>
+          GEvents is an <a href="https://github.com/pfoletto/GEvents"> open-source project</a>. Anyone can partecipate
         </p>
       </div>
     </div>
