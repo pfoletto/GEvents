@@ -70,7 +70,7 @@
     </div>
 <g:layoutBody/>
     <div class="footer" role="contentinfo">
-      <div id="copyright">&#169; 2012, <a href="http://code.google.com/p/jugevents/wiki/JUGEventsContributors" rel="external">GEvents Team</a> <br/><a href="mailto:info@grailsworkshop.com">info@grailsworkshop.com</a></div>
+      <div id="copyright">&#169; 2012, <a href="https://github.com/pfoletto/GEvents/wiki/GEventsContributors" rel="external">GEvents Team</a> <br/><a href="mailto:info@grailsworkshop.com">info@grailsworkshop.com</a></div>
 
       <div id="GrailsLogo" role="banner" align="right">
       <a href="http://www.grails.org">Powered by Grails<img src="${resource(dir: 'images', file: 'grails_logo.png')}" alt="Powered by Grails"/>
