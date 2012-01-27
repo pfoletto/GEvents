@@ -1,9 +1,11 @@
 package com.spark
 
+import grails.plugins.springsecurity.Secured
+
 import org.springframework.dao.DataIntegrityViolationException
 
 class EventController {
-
+    def springSecurityService
     static allowedMethods = [save: "POST", update: "POST", delete: "POST"]
 
     def index() {
@@ -14,11 +16,13 @@ class EventController {
         params.max = Math.min(params.max ? params.int('max') : 10, 100)
         [eventInstanceList: Event.list(params), eventInstanceTotal: Event.count()]
     }
-
+    
+    @Secured(['ROLE_USER', 'IS_AUTHENTICATED_REMEMBERED'])
     def create() {
         [eventInstance: new Event(params)]
     }
-
+    
+    @Secured(['ROLE_USER', 'IS_AUTHENTICATED_REMEMBERED'])
     def save() {
         def eventInstance = new Event(params)
         if (!eventInstance.save(flush: true)) {
@@ -41,6 +45,7 @@ class EventController {
         [eventInstance: eventInstance]
     }
 
+    @Secured(['ROLE_USER', 'IS_AUTHENTICATED_REMEMBERED'])
     def edit() {
         def eventInstance = Event.get(params.id)
         if (!eventInstance) {
@@ -51,7 +56,8 @@ class EventController {
 
         [eventInstance: eventInstance]
     }
-
+    
+    @Secured(['ROLE_USER', 'IS_AUTHENTICATED_REMEMBERED'])
     def update() {
         def eventInstance = Event.get(params.id)
         if (!eventInstance) {
@@ -82,6 +88,7 @@ class EventController {
         redirect(action: "show", id: eventInstance.id)
     }
 
+    @Secured(['ROLE_USER', 'IS_AUTHENTICATED_REMEMBERED'])
     def delete() {
         def eventInstance = Event.get(params.id)
         if (!eventInstance) {

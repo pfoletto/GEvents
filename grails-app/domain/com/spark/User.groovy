@@ -1,10 +1,8 @@
 package com.spark
 
-class User {
+class User extends SecUser{
    String fullName
-   String userName
    String email
-   String password
    String website
    String bio
    static searchable = true
@@ -12,14 +10,14 @@ class User {
 
     static constraints = {
 
-       userName(unique:true) 
+       //userName(unique:true) 
        fullName()
        email email:true, unique:true
-       password(nullable:true)
+       //password(nullable:true)
        website(nullable:true)
-       bio(nullable:true)
+       bio(nullable:true, maxSize:1000)
     }
     def String toString(){
-       userName
+       username
     }
 }
