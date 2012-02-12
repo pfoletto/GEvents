@@ -31,15 +31,7 @@
 		<g:message code="event.startDate.label" default="Start Date" />
 		<span class="required-indicator">*</span>
 	</label>
-	<g:customDatePicker name="startDate" precision="day"  value="${eventInstance?.startDate}" style="width:50px" />
-</div>
-
-<div class="fieldcontain ${hasErrors(bean: eventInstance, field: 'endDate', 'error')} required">
-	<label for="endDate">
-		<g:message code="event.endDate.label" default="End Date" />
-		<span class="required-indicator">*</span>
-	</label>
-	<g:customDatePicker name="endDate" precision="day"  value="${eventInstance?.endDate}"  style="width:50px" />
+<g:customDatePicker name="startDate" precision="day"  value="${eventInstance?.startDate}" style="width:50px" />
 </div>
 
 <div class="fieldcontain ${hasErrors(bean: eventInstance, field: 'organizer', 'error')} required">
@@ -56,6 +48,14 @@
 		
 	</label>
 	<g:textArea name="description" cols="40" rows="5" maxlength="1000" value="${eventInstance?.description}"/>
+</div>
+
+<div class="fieldcontain ${hasErrors(bean: eventInstance, field: 'direction', 'error')} ">
+	<label for="direction">
+		<g:message code="event.direction.label" default="Direction" />
+		
+	</label>
+	<g:textField name="direction" value="${eventInstance?.direction}"/>
 </div>
 
 <div class="fieldcontain ${hasErrors(bean: eventInstance, field: 'volunteers', 'error')} ">

@@ -59,11 +59,11 @@
 				</li>
 				</g:if>
 			
-				<g:if test="${eventInstance?.endDate}">
+				<g:if test="${eventInstance?.directions}">
 				<li class="fieldcontain">
-					<span id="endDate-label" class="property-label"><g:message code="event.endDate.label" default="End Date" /></span>
+					<span id="directions-label" class="property-label"><g:message code="event.directions.label" default="Directions" /></span>
 					
-						<span class="property-value" aria-labelledby="endDate-label"><g:formatDate date="${eventInstance?.endDate}" /></span>
+						<span class="property-value" aria-labelledby="directions-label"><g:formatDate date="${eventInstance?.endDate}" /></span>
 					
 				</li>
 				</g:if>
@@ -82,6 +82,35 @@
 					<span id="description-label" class="property-label"><g:message code="event.description.label" default="Description" /></span>
 					
 						<span class="property-value" aria-labelledby="description-label"><g:fieldValue bean="${eventInstance}" field="description"/></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${eventInstance?.directions}">
+				<li class="fieldcontain">
+					<span id="direction-label" class="property-label"><g:message code="event.directions.label" default="Directions" /></span>
+					
+						<span class="property-value" aria-labelledby="directions-label"><g:fieldValue bean="${eventInstance}" field="directions"/></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${eventInstance?.createdAt}">
+				<li class="fieldcontain">
+					<span id="createdAt-label" class="property-label"><g:message code="event.createdAt.label" default="Created At" /></span>
+					
+						<span class="property-value" aria-labelledby="createdAt-label"><g:formatDate date="${eventInstance?.createdAt}" /></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${eventInstance?.eventResources}">
+				<li class="fieldcontain">
+					<span id="eventResources-label" class="property-label"><g:message code="event.eventResources.label" default="Event Resources" /></span>
+					
+						<g:each in="${eventInstance.eventResources}" var="e">
+						<span class="property-value" aria-labelledby="eventResources-label"><g:link controller="eventResource" action="show" id="${e.id}">${e?.encodeAsHTML()}</g:link></span>
+						</g:each>
 					
 				</li>
 				</g:if>

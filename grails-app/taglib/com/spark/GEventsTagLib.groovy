@@ -24,10 +24,10 @@ class GEventsTagLib {
       out << '     </div>'
          
       out << '     <div class="postitContent">' 
-      out <<         attrs.message.location  
-      out << '     </div>'
-      out << '     <div class="postitText">' 
       out <<         attrs.message.name 
+      out << '     </div>'
+      out << '     <div class="postitLocation">' 
+      out <<         attrs.message.location 
       out << '     </div>'
 
       out << '     <div class="postitSignature">' 

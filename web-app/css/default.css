@@ -472,6 +472,12 @@ div#news .postitText .postitContent {
     font-style: italic;
 }
 
+div#news .postitText .postitLocation {
+    text-align: right;
+    font-size: 0.8em;
+    text-decoration: none;
+}
+
 div#news .postitText .postitSignature {
     text-align: right;
     font-size: 0.8em;

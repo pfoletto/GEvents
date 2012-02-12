@@ -28,10 +28,13 @@
 					
 						<g:sortableColumn property="location" title="${message(code: 'event.location.label', default: 'Location')}" />
 					
-					
-						<th><g:message code="event.description.label" default="Description" /></th>
-					
 						<g:sortableColumn property="venue" title="${message(code: 'event.venue.label', default: 'Venue')}" />
+					
+						<g:sortableColumn property="startDate" title="${message(code: 'event.startDate.label', default: 'Start Date')}" />
+					
+						<g:sortableColumn property="directions" title="${message(code: 'event.directions.label', default: 'Directions')}" />
+					
+						<th><g:message code="event.organizer.label" default="Organizer" /></th>
 					
 					</tr>
 				</thead>
@@ -43,11 +46,13 @@
 					
 						<td>${fieldValue(bean: eventInstance, field: "location")}</td>
 					
-                  <td>${fieldValue(bean: eventInstance, field: "description")}</td>
-                  
 						<td>${fieldValue(bean: eventInstance, field: "venue")}</td>
-									
-
+					
+						<td><g:formatDate date="${eventInstance.startDate}" /></td>
+					
+						<td>${fieldValue(bean: eventInstance, field: "directions")}</td>
+					
+						<td>${fieldValue(bean: eventInstance, field: "organizer")}</td>
 					
 					</tr>
 				</g:each>

@@ -76,7 +76,8 @@ class BootStrap {
          startDate: new Date('01/18/2012'),
          endDate: new Date('01/18/2012'),
          organizer: User.findByUsername("suntzu"),
-         description: "Workshop Grails" )
+         description: "Workshop Grails",
+         directions: "Via Borgofuro, 6 - 35042 Este (PD)" )
       
          if (!event1.save(flush: true)){
             event1.errors.allErrors.each{error ->
@@ -94,25 +95,27 @@ class BootStrap {
          startDate: new Date('03/14/2012'),
          endDate: new Date('03/14/2012'),
          organizer: User.findByUsername("expertuslucius"),
-         description: "Arduino" )
+         description: "Arduino" ,
+         directions: "Via Borgofuro, 6 - 35042 Este (PD)")
       
          if (!event2.save(flush: true)){
-            event1.errors.allErrors.each{error ->
+            event2.errors.allErrors.each{error ->
                println "An error occured with event2: ${error}"
             }
          }
          
            def event3 =   new Event (
-         name:"Serata a tema Software libero per PMI",
+         name:"Software Libero per PMI",
          location:"Este",
          venue:"IIS Euganeo",
          startDate: new Date('05/19/2012'),
          endDate: new Date('05/19/2012'),
          organizer: User.findByUsername("gregg"),
-         description: "Software libero per PMI" )
+         description: "Software libero per PMI",
+         directions: "Via Borgofuro, 6 - 35042 Este (PD)" )
       
          if (!event3.save(flush: true)){
-            event1.errors.allErrors.each{error ->
+            event3.errors.allErrors.each{error ->
                println "An error occured with event3: ${error}"
             }
          }
@@ -124,12 +127,42 @@ class BootStrap {
          startDate: new Date('09/19/2012'),
          endDate: new Date('09/19/2012'),
          organizer: User.findByUsername("loviuz"),
-         description: "Blender" )
+         description: "Blender",
+         directions: "Via Borgofuro, 6 - 35042 Este (PD)" )
          if (!event4.save(flush: true)){
-            event1.errors.allErrors.each{error ->
+            event4.errors.allErrors.each{error ->
                println "An error occured with event4: ${error}"
             }
          }
+     def event5 =   new Event (
+         name:"Grails Workshop",
+         location:"Solesino",
+         venue:"Studio di Giulio Toffoli",
+         startDate: new Date('02/25/2012'),
+         endDate: new Date('02/25/2012'),
+         organizer: User.findByUsername("suntzu"),
+         description: "Grails Workshop",
+         directions: "Solesino (PD)" )
+         if (!event5.save(flush: true)){
+            event5.errors.allErrors.each{error ->
+               println "An error occured with event5: ${error}"
+            }
+         }
+         def event6 =   new Event (
+         name:"Serata a tema i progetti del gruppo",
+         location:"Este",
+         venue:"Totem",
+         startDate: new Date('02/16/2012'),
+         endDate: new Date('02/16/2012'),
+         organizer: User.findByUsername("suntzu"),
+         description: "Grails Workshop",
+         directions: "Casa delle Associazioni - Piazzale Ca' Pesaro, 1 - 35042 Este (PD)" )
+         if (!event6.save(flush: true)){
+            event6.errors.allErrors.each{error ->
+               println "An error occured with event6: ${error}"
+            }
+         }
+         
     user1.setEnabled(true)?.save(flush: true)     
     user2.setEnabled(true)?.save(flush: true)     
     user3.setEnabled(true)?.save(flush: true)     

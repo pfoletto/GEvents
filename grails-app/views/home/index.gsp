@@ -5,15 +5,12 @@
 <body>
 
   <div class="container">
-    <div class="hero-unit">
+     <div class="hero-unit">
       <h1>GEvents</h1>
       <div id="welcome" >
         <h3>Welcome to GEvents.com</h3>
-
       </div>
     </div>
-
-
     <!-- Example row of columns -->
     <div class="row">
       <div class="span10">

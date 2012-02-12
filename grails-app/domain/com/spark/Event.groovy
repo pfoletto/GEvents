@@ -8,8 +8,9 @@ class Event {
    Date endDate
    User organizer
    String description
-   Date createdAt =new Date()
-   static hasMany = [volunteers:User]
+   String directions
+   Date createdAt = new Date()
+   static hasMany = [volunteers:User, eventResources:EventResource]
    //static searchable = true
    static searchable = {
       organizer component: true
@@ -20,9 +21,10 @@ class Event {
        location()
        venue()
        startDate()
-       endDate()
        organizer()
        description(maxSize:1000)
+       directions(nullable:true)
+       endDate()
     }
      
    
