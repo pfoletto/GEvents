@@ -1,0 +1,4 @@
+- &Authority-jugger
+  role: ROLE_JUGGER
+- &Authority-admin
+  role: ROLE_ADMIN

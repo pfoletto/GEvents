@@ -1,0 +1,6 @@
+- &User-admin
+  username: admin
+  password: ceb4f32325eda6142bd65215f4c0f371
+  enabled: true
+  authorities: 
+    - *Authority-admin

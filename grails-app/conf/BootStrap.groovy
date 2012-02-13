@@ -1,4 +1,7 @@
 import com.spark.*
+//import org.yaml.snakeyaml.Yaml
+import org.ho.yaml.Yaml
+
 class BootStrap {
     def springSecurityService
     def init = { servletContext ->
@@ -172,8 +175,44 @@ class BootStrap {
     SecUserSecRole.create user2, userRole
     SecUserSecRole.create user3, userRole
     SecUserSecRole.create user4, userRole
+    
+    loadInitialContinent()
+    loadInitialCountry()
 
     }
+    void loadInitialContinent(){
+        InputStream input = new FileInputStream(new File("resources/initialData/Continent.yml"));
+        Yaml yaml = new Yaml();
+        Object data = yaml.load(input);
+        data.each{
+            new Continent(
+                name:it.name).save()
+        }  
+    }
+
+    void loadInitialCountry(){
+        InputStream input = new FileInputStream(new File("resources/initialData/Country.yml"));
+        Yaml yaml = new Yaml();
+        Object data = yaml.load(input);
+        data.each{
+            println it.isoCode + it.continent
+            def country = new Country(isoCode: it.isoCode, 
+                languageIsoCode: it.languageIsoCode,
+                languageVariant: it.languageVariant, 
+                localName: it.localName,
+                englishName: it.englishName,
+                continent:Continent.findByName(it.continent))
+            if (!country.save(flush: true)){
+            country.errors.allErrors.each{error ->
+               println "An error occured with country: ${error}"
+            }
+         }
+        }  
+ 
+//        new Country(name: "", continent:Continent.findByName("North America")).save();
+    }
+    
     def destroy = {
     }
 }
+

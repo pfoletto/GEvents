@@ -1,0 +1,14 @@
+- &Continent-NorthAmerica
+  name: "North America"
+- &Continent-SouthAmerica
+  name: "South America"
+- &Continent-Antarctica
+  name: "Antarctica"
+- &Continent-Africa
+  name: "Africa"
+- &Continent-Europe
+  name: "Europe"
+- &Continent-Asia
+  name: "Asia"
+- &Continent-Australia
+  name: "Australia"
