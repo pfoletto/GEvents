@@ -184,7 +184,7 @@ class BootStrap {
         def numContinents = Continent.count() 
         if (numContinents.value != 7){
             Continent.executeUpdate("delete Continent c ")
-            InputStream input = new FileInputStream(new File("resources/initialData/Continent.yml"));
+            InputStream input = new FileInputStream(new File(org.codehaus.groovy.grails.web.context.ServletContextHolder.servletContext.getRealPath("fixtures/Continent.yml")));
             Yaml yaml = new Yaml();
             Object data = yaml.load(input);
             data.each{
@@ -198,11 +198,10 @@ class BootStrap {
         def numCountries = Country.count() 
         if (numCountries.value != 87){
             Country.executeUpdate("delete Country c ")
-            InputStream input = new FileInputStream(new File("resources/initialData/Country.yml"));
+            InputStream input = new FileInputStream(new File(org.codehaus.groovy.grails.web.context.ServletContextHolder.servletContext.getRealPath("fixtures/Country.yml")));
             Yaml yaml = new Yaml();
             Object data = yaml.load(input);
             data.each{
-                println it.isoCode + it.continent
                 def country = new Country(isoCode: it.isoCode, 
                     languageIsoCode: it.languageIsoCode,
                     languageVariant: it.languageVariant, 

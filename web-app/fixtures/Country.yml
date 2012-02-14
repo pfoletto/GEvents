@@ -1,0 +1,609 @@
+- &Country-AE
+  isoCode: AE
+  languageIsoCode: ar
+  languageVariant: null 
+  localName: الإمارات
+  englishName: United Arab Emirates
+  continent: Asia
+- &Country-AL
+  isoCode: AL
+  languageIsoCode: sq
+  languageVariant: null 
+  localName: Shqipëria
+  englishName: Albania
+  continent: Europe
+- &Country-AR
+  isoCode: AR
+  languageIsoCode: es
+  languageVariant: null 
+  localName: Argentina
+  englishName: Argentina
+  continent: South America
+- &Country-AT
+  isoCode: AT
+  languageIsoCode: de
+  languageVariant: null 
+  localName: Österreich
+  englishName: Austria
+  continent: Europe
+- &Country-AU
+  isoCode: AU
+  languageIsoCode: en
+  languageVariant: null 
+  localName: Australia
+  englishName: Australia
+  continent: Australia
+- &Country-BA
+  isoCode: BA
+  languageIsoCode: sr
+  languageVariant: null 
+  localName: Босна и Херцеговина
+  englishName: Bosnia and Herzegovina
+  continent: Europe
+- &Country-BE
+  isoCode: BE
+  languageIsoCode: fr
+  languageVariant: null 
+  localName: Belgique
+  englishName: Belgium
+  continent: Europe
+- &Country-BG
+  isoCode: BG
+  languageIsoCode: bg
+  languageVariant: null 
+  localName: България
+  englishName: Bulgaria
+  continent: Europe
+- &Country-BH
+  isoCode: BH
+  languageIsoCode: ar
+  languageVariant: null 
+  localName: البحرين
+  englishName: Bahrain
+  continent: Asia
+- &Country-BO
+  isoCode: BO
+  languageIsoCode: es
+  languageVariant: null 
+  localName: Bolivia
+  englishName: Bolivia
+  continent: South America
+- &Country-BR
+  isoCode: BR
+  languageIsoCode: pt
+  languageVariant: null 
+  localName: Brasil
+  englishName: Brazil
+  continent: South America
+- &Country-BY
+  isoCode: BY
+  languageIsoCode: be
+  languageVariant: null 
+  localName: Беларусь
+  englishName: Belarus
+  continent: Europe
+- &Country-CA
+  isoCode: CA
+  languageIsoCode: en
+  languageVariant: null 
+  localName: Canada
+  englishName: Canada
+  continent: North America
+- &Country-CH
+  isoCode: CH
+  languageIsoCode: de
+  languageVariant: null 
+  localName: Schweiz
+  englishName: Switzerland
+  continent: Europe
+- &Country-CL
+  isoCode: CL
+  languageIsoCode: es
+  languageVariant: null 
+  localName: Chile
+  englishName: Chile
+  continent: South America
+- &Country-CN
+  isoCode: CN
+  languageIsoCode: zh
+  languageVariant: null 
+  localName: 中国
+  englishName: China
+  continent: Asia
+- &Country-CO
+  isoCode: CO
+  languageIsoCode: es
+  languageVariant: null 
+  localName: Colombia
+  englishName: Colombia
+  continent: South America
+- &Country-CR
+  isoCode: CR
+  languageIsoCode: es
+  languageVariant: null 
+  localName: Costa Rica
+  englishName: Costa Rica
+  continent: South America
+- &Country-CS
+  isoCode: CS
+  languageIsoCode: sr
+  languageVariant: null 
+  localName: Србија и Црна Гора
+  englishName: Serbia and Montenegro
+  continent: Europe
+- &Country-CZ
+  isoCode: CZ
+  languageIsoCode: cs
+  languageVariant: null 
+  localName: Česká republika
+  englishName: Czech Republic
+  continent: Europe
+- &Country-DE
+  isoCode: DE
+  languageIsoCode: de
+  languageVariant: null 
+  localName: Deutschland
+  englishName: Germany
+  continent: Europe
+- &Country-DK
+  isoCode: DK
+  languageIsoCode: da
+  languageVariant: null 
+  localName: Danmark
+  englishName: Denmark
+  continent: Europe
+- &Country-DO
+  isoCode: DO
+  languageIsoCode: es
+  languageVariant: null 
+  localName: República Dominicana
+  englishName: Dominican Republic
+  continent: South America
+- &Country-DZ
+  isoCode: DZ
+  languageIsoCode: ar
+  languageVariant: null 
+  localName: الجزائر
+  englishName: Algeria
+  continent: Africa
+- &Country-EC
+  isoCode: EC
+  languageIsoCode: es
+  languageVariant: null 
+  localName: Ecuador
+  englishName: Ecuador
+  continent: South America
+- &Country-EE
+  isoCode: EE
+  languageIsoCode: et
+  languageVariant: null 
+  localName: Eesti
+  englishName: Estonia
+  continent: Europe
+- &Country-EG
+  isoCode: EG
+  languageIsoCode: ar
+  languageVariant: null 
+  localName: مصر
+  englishName: Egypt
+  continent: Africa
+- &Country-ES
+  isoCode: ES
+  languageIsoCode: es
+  languageVariant: null 
+  localName: España
+  englishName: Spain
+  continent: Europe
+- &Country-FI
+  isoCode: FI
+  languageIsoCode: fi
+  languageVariant: null 
+  localName: Suomi
+  englishName: Finland
+  continent: Europe
+- &Country-FR
+  isoCode: FR
+  languageIsoCode: fr
+  languageVariant: null 
+  localName: France
+  englishName: France
+  continent: Europe
+- &Country-GB
+  isoCode: GB
+  languageIsoCode: en
+  languageVariant: null 
+  localName: United Kingdom
+  englishName: United Kingdom
+  continent: Europe
+- &Country-GR
+  isoCode: GR
+  languageIsoCode: el
+  languageVariant: null 
+  localName: Ελλάδα
+  englishName: Greece
+  continent: Europe
+- &Country-GT
+  isoCode: GT
+  languageIsoCode: es
+  languageVariant: null 
+  localName: Guatemala
+  englishName: Guatemala
+  continent: South America
+- &Country-HK
+  isoCode: HK
+  languageIsoCode: zh
+  languageVariant: null 
+  localName: 香港
+  englishName: Hong Kong
+  continent: Asia
+- &Country-HN
+  isoCode: HN
+  languageIsoCode: es
+  languageVariant: null 
+  localName: Honduras
+  englishName: Honduras
+  continent: South America
+- &Country-HR
+  isoCode: HR
+  languageIsoCode: hr
+  languageVariant: null 
+  localName: Hrvatska
+  englishName: Croatia
+  continent: Europe
+- &Country-HU
+  isoCode: HU
+  languageIsoCode: hu
+  languageVariant: null 
+  localName: Magyarország
+  englishName: Hungary
+  continent: Europe
+- &Country-IE
+  isoCode: IE
+  languageIsoCode: en
+  languageVariant: null 
+  localName: Ireland
+  englishName: Ireland
+  continent: Europe
+- &Country-IL
+  isoCode: IL
+  languageIsoCode: iw
+  languageVariant: null 
+  localName: ישראל
+  englishName: Israel
+  continent: Asia
+- &Country-IN
+  isoCode: IN
+  languageIsoCode: hi
+  languageVariant: null 
+  localName: भारत
+  englishName: India
+  continent: Asia
+- &Country-IQ
+  isoCode: IQ
+  languageIsoCode: ar
+  languageVariant: null 
+  localName: العراق
+  englishName: Iraq
+  continent: Asia
+- &Country-IS
+  isoCode: IS
+  languageIsoCode: is
+  languageVariant: null 
+  localName: Ísland
+  englishName: Iceland
+  continent: Europe
+- &Country-IT
+  isoCode: IT
+  languageIsoCode: it
+  languageVariant: null 
+  localName: Italia
+  englishName: Italy
+  continent: Europe
+- &Country-JO
+  isoCode: JO
+  languageIsoCode: ar
+  languageVariant: null 
+  localName: الأردن
+  englishName: Jordan
+  continent: Asia
+- &Country-JP
+  isoCode: JP
+  languageIsoCode: ja
+  languageVariant: null 
+  localName: 日本
+  englishName: Japan
+  continent: Asia
+- &Country-KR
+  isoCode: KR
+  languageIsoCode: ko
+  languageVariant: null 
+  localName: 대한민국
+  englishName: South Korea
+  continent: Asia
+- &Country-KW
+  isoCode: KW
+  languageIsoCode: ar
+  languageVariant: null 
+  localName: الكويت
+  englishName: Kuwait
+  continent: Asia
+- &Country-LB
+  isoCode: LB
+  languageIsoCode: ar
+  languageVariant: null 
+  localName: لبنان
+  englishName: Lebanon
+  continent: Asia
+- &Country-LT
+  isoCode: LT
+  languageIsoCode: lt
+  languageVariant: null 
+  localName: Lietuva
+  englishName: Lithuania
+  continent: Europe
+- &Country-LU
+  isoCode: LU
+  languageIsoCode: fr
+  languageVariant: null 
+  localName: Luxembourg
+  englishName: Luxembourg
+  continent: Europe
+- &Country-LV
+  isoCode: LV
+  languageIsoCode: lv
+  languageVariant: null 
+  localName: Latvija
+  englishName: Latvia
+  continent: Europe
+- &Country-LY
+  isoCode: LY
+  languageIsoCode: ar
+  languageVariant: null 
+  localName: ليبيا
+  englishName: Libya
+  continent: Africa
+- &Country-MA
+  isoCode: MA
+  languageIsoCode: ar
+  languageVariant: null 
+  localName: المغرب
+  englishName: Morocco
+  continent: Africa
+- &Country-MK
+  isoCode: MK
+  languageIsoCode: mk
+  languageVariant: null 
+  localName: Македонија
+  englishName: Macedonia
+  continent: Europe
+- &Country-MX
+  isoCode: MX
+  languageIsoCode: es
+  languageVariant: null 
+  localName: México
+  englishName: Mexico
+  continent: South America
+- &Country-NI
+  isoCode: NI
+  languageIsoCode: es
+  languageVariant: null 
+  localName: Nicaragua
+  englishName: Nicaragua
+  continent: South America
+- &Country-NL
+  isoCode: NL
+  languageIsoCode: nl
+  languageVariant: null 
+  localName: Nederland
+  englishName: Netherlands
+  continent: Europe
+- &Country-NO
+  isoCode: NO
+  languageIsoCode: no
+  languageVariant: null 
+  localName: Norge
+  englishName: Norway
+  continent: Europe
+- &Country-NZ
+  isoCode: NZ
+  languageIsoCode: en
+  languageVariant: null 
+  localName: New Zealand
+  englishName: New Zealand
+  continent: Asia
+- &Country-OM
+  isoCode: OM
+  languageIsoCode: ar
+  languageVariant: null 
+  localName: سلطنة عمان
+  englishName: Oman
+  continent: Asia
+- &Country-PA
+  isoCode: PA
+  languageIsoCode: es
+  languageVariant: null 
+  localName: Panamá
+  englishName: Panama
+  continent: South America
+- &Country-PE
+  isoCode: PE
+  languageIsoCode: es
+  languageVariant: null 
+  localName: Perú
+  englishName: Peru
+  continent: South America
+- &Country-PL
+  isoCode: PL
+  languageIsoCode: pl
+  languageVariant: null 
+  localName: Polska
+  englishName: Poland
+  continent: Europe
+- &Country-PR
+  isoCode: PR
+  languageIsoCode: es
+  languageVariant: null 
+  localName: Puerto Rico
+  englishName: Puerto Rico
+  continent: South America
+- &Country-PT
+  isoCode: PT
+  languageIsoCode: pt
+  languageVariant: null 
+  localName: Portugal
+  englishName: Portugal
+  continent: Europe
+- &Country-PY
+  isoCode: PY
+  languageIsoCode: es
+  languageVariant: null 
+  localName: Paraguay
+  englishName: Paraguay
+  continent: South America
+- &Country-QA
+  isoCode: QA
+  languageIsoCode: ar
+  languageVariant: null 
+  localName: قطر
+  englishName: Qatar
+  continent: Asia
+- &Country-RO
+  isoCode: RO
+  languageIsoCode: ro
+  languageVariant: null 
+  localName: România
+  englishName: Romania
+  continent: Europe
+- &Country-RU
+  isoCode: RU
+  languageIsoCode: ru
+  languageVariant: null 
+  localName: Россия
+  englishName: Russia
+  continent: Europe
+- &Country-SA
+  isoCode: SA
+  languageIsoCode: ar
+  languageVariant: null 
+  localName: السعودية
+  englishName: Saudi Arabia
+  continent: Asia
+- &Country-SD
+  isoCode: SD
+  languageIsoCode: ar
+  languageVariant: null 
+  localName: السودان
+  englishName: Sudan
+  continent: Africa
+- &Country-SE
+  isoCode: SE
+  languageIsoCode: sv
+  languageVariant: null 
+  localName: Sverige
+  englishName: Sweden
+  continent: Europe
+- &Country-SI
+  isoCode: SI
+  languageIsoCode: sl
+  languageVariant: null 
+  localName: Slovenija
+  englishName: Slovenia
+  continent: Europe
+- &Country-SK
+  isoCode: SK
+  languageIsoCode: sk
+  languageVariant: null 
+  localName: Slovenská republika
+  englishName: Slovakia
+  continent: Europe
+- &Country-SV
+  isoCode: SV
+  languageIsoCode: es
+  languageVariant: null 
+  localName: El Salvador
+  englishName: El Salvador
+  continent: South America
+- &Country-SY
+  isoCode: SY
+  languageIsoCode: ar
+  languageVariant: null 
+  localName: سوريا
+  englishName: Syria
+  continent: Asia
+- &Country-TH
+  isoCode: TH
+  languageIsoCode: th
+  languageVariant: null 
+  localName: ประเทศไทย
+  englishName: Thailand
+  continent: Asia
+- &Country-TN
+  isoCode: TN
+  languageIsoCode: ar
+  languageVariant: null 
+  localName: تونس
+  englishName: Tunisia
+  continent: Africa
+- &Country-TR
+  isoCode: TR
+  languageIsoCode: tr
+  languageVariant: null 
+  localName: Türkiye
+  englishName: Turkey
+  continent: Asia
+- &Country-TW
+  isoCode: TW
+  languageIsoCode: zh
+  languageVariant: null 
+  localName: 台灣
+  englishName: Taiwan
+  continent: Asia
+- &Country-UA
+  isoCode: UA
+  languageIsoCode: uk
+  languageVariant: null 
+  localName: Україна
+  englishName: Ukraine
+  continent: Europe
+- &Country-US
+  isoCode: US
+  languageIsoCode: en
+  languageVariant: null 
+  localName: United States
+  englishName: United States
+  continent: North America
+- &Country-UY
+  isoCode: UY
+  languageIsoCode: es
+  languageVariant: null 
+  localName: Uruguay
+  englishName: Uruguay
+  continent: South America
+- &Country-VE
+  isoCode: VE
+  languageIsoCode: es
+  languageVariant: null 
+  localName: Venezuela
+  englishName: Venezuela
+  continent: South America
+- &Country-VN
+  isoCode: VN
+  languageIsoCode: vi
+  languageVariant: null 
+  localName: Việt Nam
+  englishName: Vietnam
+  continent: Asia
+- &Country-YE
+  isoCode: YE
+  languageIsoCode: ar
+  languageVariant: null 
+  localName: اليمن
+  englishName: Yemen
+  continent: South America
+- &Country-ZA
+  isoCode: ZA
+  languageIsoCode: en
+  languageVariant: null 
+  localName: South Africa
+  englishName: South Africa
+  continent: Africa
