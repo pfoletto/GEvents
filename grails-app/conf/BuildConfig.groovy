@@ -7,7 +7,7 @@ grails.project.source.level = 1.6
 //grails.project.war.file = "target/${appName}-${appVersion}.war"
 
 grails.war.resources = { stagingDir, args ->
-copy(file: "grails-app/conf/logging.properties", tofile: "${stagingDir}/WEB-INF/classes/logging.properties")
+copy(file: "grails-app/conf/logging.properties", tofile: "${stagingDir}/WEB-INF/classes/logging.properties")}
 grails.project.dependency.resolution = {
     // inherit Grails' default dependencies
     inherits("global") {

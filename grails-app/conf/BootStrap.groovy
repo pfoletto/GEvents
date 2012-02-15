@@ -176,8 +176,8 @@ class BootStrap {
         SecUserSecRole.create user3, userRole
         SecUserSecRole.create user4, userRole
     
-        loadInitialContinent()
-        loadInitialCountry()
+        //loadInitialContinent()
+        //loadInitialCountry()
 
     }
     void loadInitialContinent(){
