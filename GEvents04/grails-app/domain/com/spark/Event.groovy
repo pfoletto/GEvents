@@ -17,4 +17,8 @@ class Event {
       organizer()
       description(maxSize:1000)
    }
+   
+   def String toString(){
+      "$name, $location"
+   }
 }
