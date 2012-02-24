@@ -11,13 +11,14 @@
     </p>
   </div>
   <div class="homeCell" >
-    <h3>Find an Event</h3>
+    <h3>List Events</h3>
     <p>
       See if there's a technical event in the works that strikes your fancy.
       If there is, you can volunteer to help or just let the organizers know
       that you'd be interested in attending. Everybody has a role to play.
     </p>
     <span class="buttons" >
-      <g:link controller="event" action="list" >Find an Event</g:link>
+      <g:link controller="event" action="list" >List Events</g:link>
     </span>
   </div>
+</body>
