@@ -8,6 +8,7 @@ class Event {
    Date endDate
    User organizer
    String description
+   static hasMany = [volunteers:User]
    static constraints = {
       name(blank:false)
       location()
